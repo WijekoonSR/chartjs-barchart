@@ -1,10 +1,11 @@
 {
   "name": "chartjs-barchart",
-  "version": "1.0.0",
+  "version": "1.2.3",
   "description": "A bar chart provides a way of showing data values represented as vertical bars using Chart.js module ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "./node_modules/.bin/babel src/index.js --out-file index.js",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,26 @@
   "bugs": {
     "url": "https://github.com/WijekoonSR/chartjs-barchart/issues"
   },
-  "homepage": "https://github.com/WijekoonSR/chartjs-barchart#readme"
+  "homepage": "https://github.com/WijekoonSR/chartjs-barchart#readme",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-syntax-jsx"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.5",
+    "@babel/core": "^7.24.5",
+    "@babel/plugin-syntax-jsx": "^7.24.1",
+    "@babel/preset-env": "^7.24.5",
+    "@babel/preset-react": "^7.24.1",
+    "babel-loader": "^9.1.3"
+  }
 }
