@@ -29,6 +29,3 @@ yarn-debug.log*
 yarn-error.log*
 
 debug.log
-
-src
-.prettierrc.json
