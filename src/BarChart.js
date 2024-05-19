@@ -9,7 +9,7 @@ const BarChart = (props) => {
     case 'horizontal':
       return <HorizontalBarChart {...props} />;
     case 'vertical':
-      <VerticalBarChart {...props} />;
+      return <VerticalBarChart {...props} />;
     default:
       return <VerticalBarChart {...props} />;
   }

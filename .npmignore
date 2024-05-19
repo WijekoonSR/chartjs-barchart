@@ -1,34 +1,65 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Ignore node_modules folder
+node_modules/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Ignore build output from local development
+dist/
 
-# testing
-/coverage
+# Ignore any logs
+*.log
 
-# production
-/build
+# Ignore environment variable files
+.env
+.env.*
 
-/cypress/screenshots
-/cypress/videos
+# Ignore local configuration files
+*.local
 
-# misc
+# Ignore testing files and directories
+coverage/
+*.test.js
+*.spec.js
+
+# Ignore documentation and static files used only for local development
+docs/
+public/
+
+# Ignore IDE and editor configuration files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore OS-specific files
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+Thumbs.db
 
+# Ignore Webpack configuration file if not needed in the package
+webpack.config.js
 
-.yarnrc
+# Ignore Babel configuration file if not needed in the package
+.babelrc
+babel.config.js
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Ignore ESLint configuration files
+.eslintignore
+.eslintrc.js
+.eslintrc.json
+.eslintrc.yaml
 
-debug.log
-
-src
+# Ignore Prettier configuration files
+.prettierignore
+.prettierrc
+.prettierrc.js
 .prettierrc.json
+.prettierrc.yaml
+.prettierrc.toml
+
+# Ignore npm debug files
+npm-debug.log*
+
+# Ignore Yarn lock file (optional, if using npm)
+yarn.lock
+
+# Ignore other miscellaneous files
+.editorconfig
+.gitattributes
