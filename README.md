@@ -77,6 +77,6 @@ export default App;
 - data (required): The chart data, structured as per Chart.js documentation.
 - options (optional): Custom options for the chart, structured as per Chart.js documentation.
 - labelWidth (optional): Custom width for the labels on the y-axis. Default is 400.
-- labelTextLength (optional): Maximum length for the labels. Labels longer than this will be truncated.
+- labelTextLength (optional): Specify the maximum length allowed for labels. If a label exceeds this length, it will automatically wrap onto the next line..
 - type (optional): Specifies the type of bar chart. Can be "horizontal" or "vertical". Default is "vertical".
 - rest (optional): Any additional props will be passed to the canvas element.
