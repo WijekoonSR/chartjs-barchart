@@ -2,7 +2,7 @@
 
 A React component for rendering bar charts using Chart.js, with additional features to maintain consistent label widths across multiple charts.
 
-![Horizontal Bar chart with fixed label width](https://drive.google.com/uc?id=15MZSsWU332t4qB15onq8JddHycEaGMec)
+![Horizontal Bar chart with fixed label width](https://drive.google.com/uc?id=1eSm8Lw8-zNVQDjlY1FzZOzT7o-Jgp8YB)
 
 ## Installation
 
