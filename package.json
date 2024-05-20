@@ -1,6 +1,6 @@
 {
   "name": "chartjs-barchart",
-  "version": "1.5.9",
+  "version": "1.5.10",
   "description": "A bar chart provides a way of showing data values represented as vertical bars using Chart.js module ",
   "main": "dist/BarChart.js",
   "scripts": {
