@@ -5,7 +5,7 @@
   "main": "dist/BarChart.js",
   "scripts": {
     "build": "webpack",
-    "prepublishOnly": "npm run build "
+    "prepublishOnly": "npm version patch && npm run build "
   },
   "repository": {
     "type": "git",
