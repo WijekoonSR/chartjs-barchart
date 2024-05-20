@@ -14,16 +14,14 @@ const HorizontalBarChart = ({
   useEffect(() => {
     const ctx = canvasRef.current.getContext('2d');
 
-    // Prepare chart data (including label truncation if needed)
     const chartData = {
       labels:
         data && data.labels
           ? data.labels.map((item) => getChartText(item, labelTextLength))
           : [],
-      datasets: data?.datasets || [], // Handle potential absence of datasets
+      datasets: data?.datasets || [],
     };
 
-    // Configure y-axis options
     const yOptions = {
       afterFit: (scaleInstance) => {
         scaleInstance.width = labelWidth;
@@ -31,10 +29,9 @@ const HorizontalBarChart = ({
     };
 
     if (options && options.y) {
-      Object.assign(yOptions, options.y); // Merge custom y-axis options
+      Object.assign(yOptions, options.y);
     }
 
-    // Create and configure the chart
     const chart = new Chart(ctx, {
       type: 'bar',
       data: chartData,
@@ -42,16 +39,15 @@ const HorizontalBarChart = ({
         responsive: true,
         maintainAspectRatio: false,
         y: yOptions,
-        ...options, // Merge custom options
+        ...options,
       },
       ...rest,
     });
 
-    // Cleanup chart instance on unmount to avoid memory leaks
     return () => chart.destroy();
   }, [data, options]);
 
-  return <canvas ref={canvasRef} />; // Return the canvas element
+  return <canvas ref={canvasRef} />;
 };
 
 export default HorizontalBarChart;

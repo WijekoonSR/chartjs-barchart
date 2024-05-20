@@ -13,10 +13,10 @@ const VerticalBarChart = ({ data, options, ...rest }) => {
       ...rest,
     });
 
-    return () => chart.destroy(); // Cleanup chart instance on unmount
+    return () => chart.destroy();
   }, [data, options]);
 
-  return <canvas ref={canvasRef} {...rest} />; // Pass through other props
+  return <canvas ref={canvasRef} {...rest} />;
 };
 
 export default VerticalBarChart;
